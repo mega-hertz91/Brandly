@@ -27,7 +27,6 @@ font-family: 'Open Sans', sans-serif;
     background-repeat: no-repeat;
     background-size: 1920px 932px;
     background-position: 50% 0;
-    margin-top: -8px;
 }
 .head::before {
     content: "";
@@ -61,6 +60,7 @@ font-family: 'Open Sans', sans-serif;
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .site-logo {
     display: block;
@@ -72,13 +72,28 @@ font-family: 'Open Sans', sans-serif;
     margin-right: 280px;
 }
 .main-navigation-link {
+    position: relative;
     display: block;
     color: white;
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 19px;
     text-decoration: none;
     margin-top: 5px;
+}
+.main-navigation-link::before {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.main-navigation-link:hover::before {
+    display: block;
 }
 .head-slide {
     text-align: center;
@@ -117,10 +132,13 @@ font-family: 'Open Sans', sans-serif;
     border: 2px solid white;
     color: white;
     text-transform: uppercase;
-    padding: 14px 50px;
+    padding: 16px 50px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     font-family: "Open Sans",sans-serif;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 .head-slide-button:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -164,6 +182,66 @@ font-family: 'Open Sans', sans-serif;
 .products img {
     filter: brightness(70%);
 }
+.img-border {
+    position: absolute;
+    width: 313px;
+    height: 357px;
+    box-shadow: inset 0 0 0 3px white;
+    top: 30px;
+    left: 30px;
+    text-align: center;
+}
+.img-border p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 157px;
+    padding-bottom: 160px;
+}
+.img-caption {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 87px;
+    font-family: "Lato", sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+}
+.products-item:nth-of-type(4) .img-caption {
+    left: 26%;
+}
+
+.products-item:nth-of-type(5) .img-caption {
+    left: 13%;
+}
+.border-img-caption {
+    position: relative;
+}
+.border-img-caption::before {
+    content: "";
+    position: absolute;
+    width: 193px;
+    height: 2px;
+    background-color: white;
+    top: -11px;
+    left: 50%;
+    margin-left: -96px;
+}
+.border-img-caption::after {
+    content: "";
+    position: absolute;
+    width: 193px;
+    height: 2px;
+    background-color: white;
+    bottom: -120px;
+    left: 50%;
+    margin-left: -96px;
+}
 .products-logo {
     display: block;
     font-family: 'Open Sans', sans-serif;
@@ -183,8 +261,11 @@ font-family: 'Open Sans', sans-serif;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.products-item {
+    position: relative;
+}
 .products-item:first-of-type {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 .products-item:last-of-type {
     margin-bottom: 58px;
@@ -196,6 +277,76 @@ font-family: 'Open Sans', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1px;
+}
+.trending-caption {
+    color: #dd1515;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    line-height: bold;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.trending-products p {
+    color: #777777;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+}
+.trending-description {
+    margin-bottom: 47px;
+}
+.trending-title {
+    margin-bottom: 25px;
+}
+.fashion-type {
+    margin-bottom: 0;
+}
+.fashion-title {
+    margin-top: 0px;
+    margin-bottom: 62px;
+}
+.size-wrap {
+    width: 372px;
+    height: 135px;
+}
+.jacket-size,
+.jacket-view{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.jacket-size-button {
+    background-color: transparent;
+    width: 70px;
+    height: 52px;
+    border: 1px solid black;
+    border-left-color: #b0b0b0;
+    border-right-color: #b0b0b0;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.jacket-view-button {
+    border: 1px solid black;
+    padding: 15px 42px;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.jacket-size-button:hover,
+.jacket-view-button:hover{
+    background-color: #333333;
+    color: #f1f1f1;
 }
 .trending-products {
     width: 1170px;
@@ -213,8 +364,8 @@ font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 300;
     text-align: center;
-    margin-top: 79px;
-    margin-bottom: 90px;
+    margin-top: 82px;
+    margin-bottom: 91px;
 }
 .blog {
     width: 100%;
