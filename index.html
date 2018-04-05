@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brandly</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <div class="head-fill">
+            <nav class="main-navigation">
+                <ul class="main-navigation-list">
+                    <li class="main-navigation-item">
+                        <a class="site-logo"></a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a class="main-navigation-link">Home</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a class="main-navigation-link">Shop</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a class="main-navigation-link">Brends</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a class="main-navigation-link">Blog</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a class="main-navigation-link">About</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a class="main-navigation-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head-slide-control">
+            <input type="radio" name="control" id="radio1" checked>
+            <input type="radio" name="control" id="radio2" >
+            <input type="radio" name="control" id="radio3" >
+        </div>
+        <div class="head-slide">
+            <h3>Spring / Summer Collection</h3>
+            <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
+            <h3>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
+            <button class="head-slide-button" type="button">shop now</button>
+            <div class="label-controls">
+                <label for="radio1"></label>
+                <label for="radio2"></label>
+                <label for="radio3"></label>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-content-fill">
+            <section class="products">
+                <h2 class="visyally-hidden">Products</h2>
+                <div class="products-logo"></div>
+                <ul class="products-list">
+                    <li class="products-item">
+                        <img src="img/men.jpg" width="370" height="418" alt="Men">
+                    </li>
+                    <li class="products-item">
+                        <img src="img/woman.jpg" width="370" height="418" alt="Woman">
+                    </li>
+                    <li class="products-item">
+                        <img src="img/watches.jpg" width="370" height="418" alt="Watches">
+                    </li>
+                    <li class="products-item">
+                        <img src="img/new-collection.jpg" width="570" height="418" alt="New-collection">
+                    </li>
+                    <li class="products-item">
+                        <img src="img/spirit-collection.jpg" width="570" height="418" alt="Sun-glasses">
+                    </li>
+                </ul>
+            </section>
+            <section class="trending">
+                <h2 class="visyally-hidden">Trend</h2>
+                <div class="trending-logo"></div>
+                <div class="trending-products">
+                    <img src="/img/jacket.jpg" width="570" height="570" alt="Jacket">
+                    <h3 class="trending-caption">NATHAN STEWART JACKET</h3>
+                    <p>Summer/Autumn Collection</p>
+                    <p>Classic Nathan Stewart Jacket from his latest collection.
+                        This item is loved by many just because of it’s simle style.
+                        Simple lines,lovely texture,it suits almost everybody.
+                        It comes in six different colors,and all siz</p>
+                    <p>FASHION TIP:</p>
+                    <p>With this jacket,Nathan Ste wart sunglasses go hand in hand!</p>
+                    <div class="size-wrap">
+                        <div class="jacket-size">
+                            <button class="jacket-size-button">M</button>
+                            <button class="jacket-size-button">L</button>
+                            <button class="jacket-size-button">XL</button>
+                            <button class="jacket-size-button">XXL</button>
+                        </div>
+                        <div class="jacket-view">
+                            <a class="jacket-view-button">SHOP NOW</a>
+                            <a class="jacket-view-button">SIZE GUIDE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <h2 class="visyally-hidden">Blog</h2>
+                <div class="blog-list">
+                    <div class="blog-item">
+                        <img src="img/german-fashion.jpg" width="570" height="400" alt="German-fashion">
+                        <h3 class="blog-item-caption">GERMAN FASHION WIZARDS</h3>
+                        <ul class="blog-item-group">
+                            <li class="blog-item-group-item">By James SteedFashion</li>
+                            <li class="blog-item-group-item">Fashion</li>
+                        </ul>
+                        <p>This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the
+                            European fashion scene and this year at Paris Fashion Week they
+                            introduced their new collection.
+                        </p>
+                        <button class="blog-item-button" type="button">READ MORE</button>
+                    </div>
+                    <div class="blog-item">
+                        <img src="img/sun-glasses.jpg" width="570" height="400" alt="Sun-glasses">
+                        <h3 class="blog-item-caption">ANNE STEWART’S SUNGLASSES</h3>
+                        <ul class="blog-item-group">
+                            <li class="blog-item-group-item">By Marry Beard</li>
+                            <li class="blog-item-group-item">Trending</li>
+                        </ul>
+                        <p>Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...
+                        </p>
+                        <button class="blog-item-button" type="button">READ MORE</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="foo">
+        <div class="footer-wrap">
+            <h3 class="form-caption">SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS</h3>
+            <form action="" method="post">
+                <label class="visyally-hidden" for="email">Your email</label>
+                <input type="email" name="email" id="email" placeholder="EMAIL ADRESS">
+                <button class="footer-wrap-button" type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
