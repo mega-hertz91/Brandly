@@ -1,3 +1,7 @@
+/*Шрифты
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
 .visyally-hidden {
     position: absolute;
     width: 1px;
@@ -8,3 +12,212 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.body {
+    width: 1920px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.head {
+    position: relative;
+    width: 1920px;
+    height: 934px;
+    margin: auto;
+    background-image: url("../img/girl.png");
+    background-repeat: no-repeat;
+    background-size: 1920px 932px;
+    background-position: 50% 0;
+    margin-top: -8px;
+}
+.head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1920px;
+    height: 932px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.head-fill {
+    position: relative;
+    width: 1170px;
+    min-height: 934px;
+    margin: auto;
+    padding-top: 28px;
+    z-index: 1;
+}
+.head-slide-control {
+
+}
+.main-navigation {
+    width: 1170px;
+    min-height: 35px;
+}
+.main-navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+.site-logo {
+    display: block;
+    width: 129px;
+    height: 35px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 280px;
+}
+.main-navigation-link {
+    display: block;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 19px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.head-slide {
+    text-align: center;
+    color: white;
+}
+.head-slide h2,
+.head-slide h3 {
+    padding: 0;
+    margin: 0;
+}
+.head-slide .first-element {
+    margin-top: 242px;
+    margin-bottom: 37px;
+}
+.head-slide .second-element {
+    margin-bottom: 37px;
+}
+.head-slide h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.head-slide h2 {
+    font-family: 'Lato',sans-serif;
+    font-size: 59px;
+    line-height: 60px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.main-content {
+
+}
+.main-content-fill {
+    margin: auto;
+    width: 1920px;
+}
+.products {
+    width: 1170px;
+    min-height: 1058px;
+    margin: auto;
+}
+.products img {
+    filter: brightness(70%);
+}
+.products-logo {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 84px;
+    margin-bottom: 90px;
+}
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products-item:first-of-type {
+    margin-bottom: 23px;
+}
+.products-item:last-of-type {
+    margin-bottom: 58px;
+}
+.trending {
+    width: 100%;
+    min-height: 915px;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1px;
+}
+.trending-products {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+}
+.left-column {
+    margin-right: 30px;
+}
+.trending-logo {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 79px;
+    margin-bottom: 90px;
+}
+.blog {
+    width: 100%;
+    height: 945px;
+}
+.blog-list {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog-item {
+    width: 570px;
+    height: 780px;
+}
+.blog-logo {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 88px;
+    margin-bottom: 92px;
+}
+.foo {
+    width: 1920px;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 160px;
+    background-image: url("../img/foo.jpg");
+}
+.form-caption {
+    padding: 0;
+    margin: 0;
+}
+.footer-wrap {
+    width: 1170px;
+    height: 250px;
+    margin: auto;
+}
+

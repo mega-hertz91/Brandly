@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Brandly</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,300i,400" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -14,40 +16,40 @@
                         <a class="site-logo"></a>
                     </li>
                     <li class="main-navigation-item">
-                        <a class="main-navigation-link">Home</a>
+                        <a class="main-navigation-link" href="#">Home</a>
                     </li>
                     <li class="main-navigation-item">
-                        <a class="main-navigation-link">Shop</a>
+                        <a class="main-navigation-link" href="#">Shop</a>
                     </li>
                     <li class="main-navigation-item">
-                        <a class="main-navigation-link">Brends</a>
+                        <a class="main-navigation-link" href="#">Brends</a>
                     </li>
                     <li class="main-navigation-item">
-                        <a class="main-navigation-link">Blog</a>
+                        <a class="main-navigation-link" href="#">Blog</a>
                     </li>
                     <li class="main-navigation-item">
-                        <a class="main-navigation-link">About</a>
+                        <a class="main-navigation-link" href="#">About</a>
                     </li>
                     <li class="main-navigation-item">
-                        <a class="main-navigation-link">Contact</a>
+                        <a class="main-navigation-link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
-        </div>
-        <div class="head-slide-control">
-            <input type="radio" name="control" id="radio1" checked>
-            <input type="radio" name="control" id="radio2" >
-            <input type="radio" name="control" id="radio3" >
-        </div>
-        <div class="head-slide">
-            <h3>Spring / Summer Collection</h3>
-            <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
-            <h3>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
-            <button class="head-slide-button" type="button">shop now</button>
-            <div class="label-controls">
-                <label for="radio1"></label>
-                <label for="radio2"></label>
-                <label for="radio3"></label>
+            <div class="head-slide-control visyally-hidden">
+                <input type="radio" name="control" id="radio1" checked>
+                <input type="radio" name="control" id="radio2" >
+                <input type="radio" name="control" id="radio3" >
+            </div>
+            <div class="head-slide">
+                <h3 class="first-element">Spring / Summer Collection</h3>
+                <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
+                <h3 class="second-element">TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
+                <button class="head-slide-button" type="button">shop now</button>
+                <div class="label-controls">
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                    <label for="radio3"></label>
+                </div>
             </div>
         </div>
     </header>
@@ -55,7 +57,7 @@
         <div class="main-content-fill">
             <section class="products">
                 <h2 class="visyally-hidden">Products</h2>
-                <div class="products-logo"></div>
+                <p class="products-logo">Latest Products</p>
                 <ul class="products-list">
                     <li class="products-item">
                         <img src="img/men.jpg" width="370" height="418" alt="Men">
@@ -76,33 +78,38 @@
             </section>
             <section class="trending">
                 <h2 class="visyally-hidden">Trend</h2>
-                <div class="trending-logo"></div>
+                <p class="trending-logo">Trending Items</p>
                 <div class="trending-products">
-                    <img src="/img/jacket.jpg" width="570" height="570" alt="Jacket">
-                    <h3 class="trending-caption">NATHAN STEWART JACKET</h3>
-                    <p>Summer/Autumn Collection</p>
-                    <p>Classic Nathan Stewart Jacket from his latest collection.
+                    <div class="left-column">
+                        <img src="img/jacket.jpg" width="570" height="570" alt="Jacket">
+                    </div>
+                    <div class="right-column">
+                        <h3 class="trending-caption">NATHAN STEWART JACKET</h3>
+                        <p>Summer/Autumn Collection</p>
+                        <p>Classic Nathan Stewart Jacket from his latest collection.
                         This item is loved by many just because of it’s simle style.
                         Simple lines,lovely texture,it suits almost everybody.
                         It comes in six different colors,and all siz</p>
-                    <p>FASHION TIP:</p>
-                    <p>With this jacket,Nathan Ste wart sunglasses go hand in hand!</p>
-                    <div class="size-wrap">
-                        <div class="jacket-size">
-                            <button class="jacket-size-button">M</button>
-                            <button class="jacket-size-button">L</button>
-                            <button class="jacket-size-button">XL</button>
-                            <button class="jacket-size-button">XXL</button>
-                        </div>
-                        <div class="jacket-view">
-                            <a class="jacket-view-button">SHOP NOW</a>
-                            <a class="jacket-view-button">SIZE GUIDE</a>
+                        <p>FASHION TIP:</p>
+                        <p>With this jacket,Nathan Ste wart sunglasses go hand in hand!</p>
+                        <div class="size-wrap">
+                            <div class="jacket-size">
+                                <button class="jacket-size-button">M</button>
+                                <button class="jacket-size-button">L</button>
+                                <button class="jacket-size-button">XL</button>
+                                <button class="jacket-size-button">XXL</button>
+                            </div>
+                            <div class="jacket-view">
+                                <a class="jacket-view-button">SHOP NOW</a>
+                                <a class="jacket-view-button">SIZE GUIDE</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="blog">
                 <h2 class="visyally-hidden">Blog</h2>
+                <p class="blog-logo">From The Blog</p>
                 <div class="blog-list">
                     <div class="blog-item">
                         <img src="img/german-fashion.jpg" width="570" height="400" alt="German-fashion">
