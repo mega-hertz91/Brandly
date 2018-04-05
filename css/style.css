@@ -92,9 +92,10 @@ font-family: 'Open Sans', sans-serif;
 .head-slide .first-element {
     margin-top: 242px;
     margin-bottom: 37px;
+    letter-spacing: 9px;
 }
 .head-slide .second-element {
-    margin-bottom: 37px;
+    margin-bottom: 48px;
 }
 .head-slide h3 {
     font-family: 'Open Sans', sans-serif;
@@ -108,14 +109,52 @@ font-family: 'Open Sans', sans-serif;
     font-size: 59px;
     line-height: 60px;
     font-weight: 900;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
+}
+.head-slide-button {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+}
+.head-slide-button:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 .main-content {
-
+    width: 1920px;
+    margin: auto;
 }
 .main-content-fill {
     margin: auto;
     width: 1920px;
+}
+.section-logo {
+    position: relative;
+}
+.section-logo::before {
+    content: "";
+    position: absolute;
+    width: 114px;
+    height: 3px;
+    background: #dc0000;
+    left: 50%;
+    margin-left: -57px;
+    top: -18px;
+}
+.section-logo::after {
+    content: "";
+    position: absolute;
+    width: 113px;
+    height: 3px;
+    background: #dc0000;
+    left: 50%;
+    margin-left: -57px;
+    bottom: -22px;
 }
 .products {
     width: 1170px;
@@ -179,7 +218,8 @@ font-family: 'Open Sans', sans-serif;
 }
 .blog {
     width: 100%;
-    height: 945px;
+    height: 1032px;
+    padding-top: 2px;
 }
 .blog-list {
     width: 1170px;
@@ -200,7 +240,7 @@ font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 300;
     text-align: center;
-    margin-top: 88px;
+    margin-top: 85px;
     margin-bottom: 92px;
 }
 .foo {
